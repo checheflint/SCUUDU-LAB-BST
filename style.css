@@ -9,12 +9,12 @@ body {
 }
 
 header {
-    position: fixed;   /* stick to top */
-    top: 0;            /* place at the very top */
-    left: 0;           /* align to the left edge */
-    width: 100%;       /* stretch across the screen */
-    z-index: 1000;     /* sit above other elements */
-    background-color: #fff; /* add background so content behind doesn’t show through */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
 }
 
 li {
@@ -580,7 +580,6 @@ nav a {
 .raterNameAndTitle {
     display: flex;
     flex-direction: column;
-    /* gap: 0px; */
 }
 
 .raterNameAndTitle p {
