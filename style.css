@@ -9,13 +9,63 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    min-height: 70px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px 3.5%;
-    height: auto;
-    justify-items: center;
     justify-content: space-between;
+    align-content: center;
     align-items: center;
+    padding: 0 64px;
+    width: auto;
+}
+
+.nav-branding {
+    border: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.login-item {
+    margin-left: auto;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    
+}
+
+.bar {
+    display: block;
+    background-color: #000000;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 nav {
@@ -59,9 +109,11 @@ nav a {
     position: relative;
     background: url(./assets/hero-image.jpg) center/cover no-repeat;
     height: 120vh;
-    width: 100%;
+    width: auto;
     justify-content: center;
+    margin-top: 72px;
 }
+
 
 .overlay {
     display: flex;
@@ -528,7 +580,6 @@ nav a {
 .raterNameAndTitle {
     display: flex;
     flex-direction: column;
-    /* gap: 0px; */
 }
 
 .raterNameAndTitle p {
@@ -854,6 +905,10 @@ footer {
         justify-content: center;
     }
     
+    .login-item {
+        margin-left: auto;
+    }
+
     .card {
         width: 450px;        
     }
@@ -915,45 +970,113 @@ footer {
     }
 
     .tipsAndGuidesContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
 
 }
 
-@media (max-width: 750px) {
-   
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .login-item {
+        margin-left: 0;
+    }
+
+    #loginBtn {
+        background-color: white;
+        text-decoration: none;
+        color: inherit;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        flex-shrink: 0;
+        border: none;
+        font-size: 16px;
+
+    }
+
+    #loginBtn:hover {
+        background-color: white;
+        text-decoration: none;
+        color: inherit;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -110%;
+        top: 50px;
+        gap: 0;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0 auto; /* center horizontally */
+    }
+
+    .nav-item {
+        padding: 16px 0;
+        border-top: 1px solid rgba(128, 128, 128, 0.219);
+    }
+
+    .nav-link {
+        border: none;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
     .hero {
         display: flex;
         position: relative;
         background: url(./assets/hero-image.jpg) center/cover no-repeat;
         height: 90vh;
-        width: 100%;
+        width: auto;
         justify-content: center;
     }
 
-    header {
+   
+    .card {
         display: flex;
-        flex-wrap: wrap;
-        padding: 20px 3.5%;
-        height: auto;
-        justify-content: space-between;
-        align-items: start;
+        flex-direction: column;
+        width: 350px;
+        border: 1px solid rgba(128, 128, 128, 0.521);
+        border-radius: 20px;
+        overflow: hidden;
+        padding-bottom: 20px;
     }
 
-    .card {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    border: 1px solid rgba(128, 128, 128, 0.521);
-    border-radius: 20px;
-    overflow: hidden;
-    padding-bottom: 20px;
-}
-
-.exploreBtns {
+    .exploreBtns {
         justify-content: center;
         align-self: center;
         text-align: center;
@@ -975,4 +1098,5 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
 }

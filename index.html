@@ -8,16 +8,38 @@
 </head>
 <body>
     <header class="header">
-        <img src="./assets/Japa logo.svg" alt="company logo">
+        <nav class="navbar">
+            <a href="#" class="nav-branding"><img src="./assets/Japa logo.svg" alt="company logo"></a>
 
-        <nav>
-            <a href="#">Book Flights</a>
-            <a href="#">Deals</a>
-            <a href="#">Destination</a>
-            <a href="#">Plans</a>
+            <ul class="nav-menu">
+               
+                <div class="nav-links">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Book Flights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Plans</a>
+                    </li>
+                </div>
+
+                <li class="nav-item login-item">
+                    <a href="#" id="loginBtn">Login</a>
+                </li>
+            </ul>
+
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-
-        <a href="#" id="loginBtn">Login</a>
     </header>
 
     <section class="hero">
@@ -339,6 +361,6 @@
         </div>
 
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
