@@ -11,3 +11,9 @@ addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+const bookButton = document.getElementById("bookButton");
+
+bookButton.addEventListener("click" , () =>{
+    window.location.href = "../booking.html"
+});
