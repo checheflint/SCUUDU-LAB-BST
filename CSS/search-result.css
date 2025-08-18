@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-bg-color: #ffffff;
+  --primary-color-300: #aaaaaa;
+  --primary-color-400: #808080;
+  --primary-color-500: #d5d5d5;
+  --secondary-color: #d6eaf8;
+  --secondary-color-base: #3498db;
+  --accent-color: #0f4426;
+  --accent-color-base: #2ecc71;
+  --text-color: #1a1a1a;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+#nav-section {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 4rem;
+  margin-bottom: 40px;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#nav-links img {
+  width: 70px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+#nav-section #nav-links {
+  display: flex;
+  padding-left: 10px;
+}
+#nav-section #nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+#nav-section #nav-links i {
+  vertical-align: middle;
+  padding-left: 8px;
+}
+#nav-section #nav-links ul a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+#nav-section #nav-links ul a:hover {
+  background-color: var(--primary-color-500);
+  border-radius: 5px;
+}
+
+#nav-section .right-links ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  list-style-type: none;
+}
+#nav-section .right-links ul a {
+  text-decoration: none;
+  color: var(--secondary-color-base);
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+#nav-section .right-links ul img {
+  vertical-align: middle;
+  width: 24px;
+  padding-right: 5px;
+}
+
+#nav-section .right-links ul a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown top Sections*/
+.upper-btn {
+  display: flex;
+  gap: 40px;
+  margin: 40px 4rem;
+}
+
+.return {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color-300);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  width: 250px;
+  padding: 10px 25px;
+  border-bottom: 1px solid var(--text-color);
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.return h5 {
+  background-color: var(--primary-bg-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.upper-btn .return #one-way {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 10px;
+}
+
+.upper-btn .economy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.economy i {
+  vertical-align: middle;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.upper-btn .economy h5 {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  width: 150px;
+  padding: 20px 25px;
+  border-bottom: 2px solid var(--primary-color-300);
+  border-top: 2px solid var(--primary-color-300);
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.upper-btn .accomodation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.upper-btn .accomodation img {
+  width: 20px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 40px 4rem;
+}
+
+.location .from {
+  font-size: 14px;
+  color: var(--primary-color-300);
+  padding-bottom: 10px;
+}
+
+.location img {
+  width: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.location .double-arrow img {
+  width: 25px;
+}
+
+.search-flights p {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* Booking info-dashboard */
+
+section{
+  display: flex;
+}
+.card-content{
+  margin: 0.5rem 4rem;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    width: 100%; 
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0px 8px rgba(0,0,0,0.2);
+    
+  }
+  
+
+  .left-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+  }
+  
+  .route {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .route img{
+    width: 25px;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+  
+  .flights {
+    font-size: 14px;
+    color: var(--primary-color-400);
+  }
+  
+
+  .right-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    align-items: flex-end; 
+  }
+  
+  .right-content button img{
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .card-content .right-content, .left-content i{
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .date {
+    font-size: 14px;
+    color: var(--primary-color-300);
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 6px; 
+  }
+  
+  button {
+    padding: 6px 15px;
+    border: 2px solid var(--secondary-color-base);
+    border-radius: 6px;
+    background: #f8f8f8;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .six-contents{
+    display: flex;
+  }
+
+  .content-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 350px;
+    background-color: var(--secondary-color-base);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0.5rem 4rem;
+  }
+  
