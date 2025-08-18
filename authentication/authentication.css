@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color:#D6EAF859;
+    border-width: 1px;
+    padding-right: 64px;
+    padding-left: 64px;
+    border: 1px solid #D4D4D4CC;
+}
+main {
+    justify-self: center;
+}
+
+.frame40 {
+    width: 104px;
+    height: 49px;
+    background: #FFFFFF;
+}
+
+.login-text p {
+    width: 562px;
+    height: 52px;
+    top: 124px;
+    left: 408px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0%;
+
+}
+.down-text p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+label {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    width: 208px;
+}
+.email {
+    width: fixed (624px);
+    height: fixed (56px);
+    border-radius: 12px;
+    border-width: 1px; 
+    padding-top: 14px;
+    padding-right: 360px;
+    padding-bottom: 14px;
+    padding-left: 19px;
+    gap: 20px;
+    margin-bottom: 35px;
+    border: 1px solid #555555;
+}
+.email {
+    top: 350px;
+    left: 408px;
+    width: 204px;
+    height: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background: #fcfafa;
+}
+.btn {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 12px;
+    padding-left: 177px;
+    padding-right: 177px;
+    background: #0F4426;
+}
+.btn {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 0px rgba(32, 3, 3, 0.2);
+    background: rgb(1, 63, 1);
+}
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #555;
+    margin: 20px 0;
+    width: 100%;
+    height: 28px;
+      
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #aaa;
+}
+.divider:not(:empty)::before {
+    margin-right: 10px;
+}
+.divider:not(:empty)::after {
+    margin-left: 10px;
+}
+.social-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.social-btn {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+}
+
+.social-btn:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.social-btn img {
+    width: 30px;
+    height: 30px;
+}
+.note {
+    width: 527px;
+    height: 47px;
+    top: 880px;
+    left: 456px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.note {
+  margin-bottom: 6%;
+}
+.terms, .privacy {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: auto;
+    color: #1A1A1A;
+}
+.terms, .privacy {
+    cursor: pointer;
+}
+.terms:hover, .privacy:hover {
+    color: rgb(148, 10, 10);
+}
+
+
+.copywrite {
+    width: 389px;
+    height: 20px;
+    gap: 10px;
+    width: 354px;
+    height: 17px;
+    top: 979px;
+    left: 456px;
+    gap: 11px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 100;
+    font-style: Regular;
+    font-size: 1px;
+    line-height:100%;
+    letter-spacing: 0%;
+}
+
+
+@media (max-width: 600px) {
+    * {
+        max-width: 100%;
+    }
+    header {
+        max-height: 4vh;
+    }
+    main {
+        margin: 1rem;
+        margin: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
