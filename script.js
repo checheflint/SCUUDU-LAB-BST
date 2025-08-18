@@ -15,5 +15,5 @@ addEventListener("click", () => {
 const bookButton = document.getElementById("bookButton");
 
 bookButton.addEventListener("click" , () =>{
-    window.location.href = "../booking.html"
+    window.location.href = "booking.html"
 });
