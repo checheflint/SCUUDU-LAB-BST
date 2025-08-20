@@ -123,6 +123,10 @@ main {
     background-color: #FDFDFD;
 }
 
+.pay-method p {
+    font-weight: 500;
+}
+
 .pay-option {
     display: flex;
     gap: 24px;
@@ -218,6 +222,10 @@ main {
     /* margin-top: 48px; */
 }
 
+.timer {
+    color: #FF0000;
+}
+
 .make-payment-btn {
     background-color: #176639;
     padding: 12px 0px;
@@ -226,4 +234,86 @@ main {
     color: #FFFFFF;
     border: none;
     border-radius: 10px;
+}
+
+.booking-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 500px;
+    margin-left: 80px;
+}
+
+.booking-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+}
+
+.booking-info > p {
+    margin-top: 20px;
+}
+
+.booking-info > h5 {
+    margin-top: 20px;
+}
+
+.traveler {
+    font-weight: 600;
+}
+
+.price-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price-detail-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-detail-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-on-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.add-on-detail-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-on-detail-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.total {
+    display: flex;display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.total p {
+    font-size: 16px;
+    font-weight: 700;
 }
