@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --primary-bg-color: #FFFFFF;
+    --primary-color-300: #AAAAAA;
+    --primary-color-400: #808080;
+    --primary-color-500: #D5D5D5;
+    --secondary-color: #D6EAF8;
+    --secondary-color-base: #3498DB;
+    --accent-color: #0F4426;
+    --accent-color-base: #2ECC71;
+    --text-color: #1A1A1A;
+}
+
+body{
+    background-color: var(--primary-bg-color);
+}
+
+#nav-section{
+    background-color: var(--primary-bg-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 4rem;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#nav-links img{
+    width: 70px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+#nav-section #nav-links{
+    display: flex;
+    padding-left: 10px;
+}
+#nav-section #nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+#nav-section #nav-links i{
+    vertical-align: middle;
+    padding-left: 8px;
+}
+
+#nav-section #nav-links ul a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+#nav-section #nav-links ul a:hover{
+    background-color: var(--primary-color-500);
+    border-radius: 5px;
+}
+
+#nav-section .right-links ul{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style-type: none;
+    gap: 10px;
+}
+#nav-section .right-links ul a{
+    text-decoration: none;
+    color: var(--secondary-color-base);
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#nav-section .right-links ul img{
+    vertical-align: middle;
+    width: 24px;
+    padding-right: 5px;
+}
+
+#nav-section .right-links ul a:hover{
+    text-decoration: underline;
+}
+
+.hero-section{
+    margin: 4rem;
+}
+
+.upper-btn{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.return{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color-300);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    width: 250px;
+    padding: 10px 25px;
+    border-bottom: 1px solid var(--text-color);
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.return h5{
+    background-color: var(--primary-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.upper-btn .return #one-way{
+    background-color: transparent; 
+    padding: 10px;
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 10px;
+}
+
+.upper-btn .economy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.economy i{
+    vertical-align: middle;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.upper-btn .economy h5{
+    background-color: var(--primary-bg-color);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    width: 150px;
+    padding: 20px 25px;
+    border-bottom: 2px solid var(--primary-color-300);
+    border-top: 2px solid var(--primary-color-300);
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.upper-btn .accomodation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.upper-btn .accomodation img{
+    width: 20px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.successful-icon {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.confirmation-refrence {  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-badge {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 15px 0;
+    gap: 8x;
+}
+
+.success-badge i {
+    color: #0F4426;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.success-badge p {
+    color: #1A1A1A;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.accommodation-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    padding: 0.8rem 4rem;
+}
+
+.accommodation-section h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.features-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   gap: 64px;
+   max-width: 100%;
+   margin-bottom: 60px;
+} 
+
+.feature-card {
+    width: 350px;
+    border: 1px solid #0000002a;
+    border-radius: 22px;
+    padding: 10px;
+}
+
+.feature-content ul h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1adc;
+}
+
+.feature-content ul p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1a1a1a8f;
+}
+
+.feature-content ul li {
+    font-size: 12px;
+    color: #1a1a1a8f;
+    margin-top: 8px;
+}
+
+.feature-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0,  0, 0.4);
+    border: 1px solid #3498dbb9;
+}
+
+.feature-content {
+    padding: 8px;
+}
+
+.feature-card img{
+    width: 100%;
+    height: 300px;
+}
+
+.feature-content h4 {
+    color: #b21f1f;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.view-hotel-nearby {
+  color: #3498DB;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+footer{
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 48px) {
+       .confirmation-content {
+        padding: 30px 15px;
+       }
+
+       .features-grid {
+        grid-template-columns: 1fr;
+       }
+
+       .confirmation-header h1 {
+           font-size: 32px;
+       }
+
+       .confirmation-header h2 {
+        font-size: 28px;
+       }
+
+       .discover-section h3 {
+        font-size: 28px;
+       }
+
+       .feature-card {
+        min-height: 250px;
+       }
+}

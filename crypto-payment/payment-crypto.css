@@ -1,0 +1,414 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  
+}
+
+.top-nav {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: white;
+  border-bottom: none;
+  margin-left: 30px;
+}
+
+.logo {
+  font-size: 22px;
+  color: #0ab0f3;
+  /*font-weight: bold;*/
+  font-family: 'roboto', sans-serif;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;;
+}
+
+.info span {
+  margin-bottom: 5px;
+}
+
+.info span:last-child {
+  font-weight: bold;
+}
+
+.payment-options .option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f7ff;
+    border-radius: 5px;
+    justify-content: start;
+}
+.payment-options .option:hover {
+    background-color: #e0f0ff;
+}
+
+.payment-options .option.active {
+    background-color: #e6ffe6;
+}
+
+.payment-options .option.active:hover {
+    background-color: #d4ffd4;
+}
+
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+
+.payment-form {
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 28px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.wallet-input {
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.wallet-btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallet-btn .icon {
+    margin-left: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.submit-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.security-text {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #333;
+}
+
+.security-text .lock-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+
+.booking-summary {
+  max-width: 100%;
+  min-height: 500px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  border: none;
+  padding:20px;
+  padding-bottom: 800px;
+  margin-left: 1px;
+  
+}
+
+.booking-summary h1 {
+  font-size: 24px;
+  margin: 0 0 5px 0;
+  align-items: center;
+}
+
+.booking-summary h2 {
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 15px 0;
+}
+
+.booking-summary .traveler {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.booking-summary .price-details {
+  margin-bottom: 25px;
+}
+
+.price-details .item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.price-details .item .label {
+  font-weight: bold;
+}
+
+.price-details .total {
+  font-size: 16px;
+  font-weight: bold;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.price-details .section-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+
+
+.pay-with {
+  max-width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin-left: 25px;
+  margin-top: 60px;
+}
+
+.pay-with .left-section {
+  display: flex;
+  align-items: center;
+}
+
+.pay-with .left-section .label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.pay-with .left-section .logo {
+  font-size: 24px; /* Adjust if using an image */
+  color: #00aaff; /* Example color for "Japa" logo */
+}
+
+.pay-with .right-section {
+  text-align: right;
+}
+
+.pay-with .right-section .email {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pay-with .right-section .pay {
+  font-size: 16px;
+  padding-left: 20px;;
+  font-weight: bold;
+}
+
+.pay-with .right-section .amount {
+  font-size: 16px;
+  padding-left: 100px;;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.payment-details {
+  /* Styles for the container div */
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.payment-details label {
+  /* Styles for the label */
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.payment-details select#bankSelect {
+  /* Styles for the select element with ID 'bankSelect' */
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none; /* Removes default arrow in some browsers */
+  background-color: #fff;
+}
+
+.payment-details select#bankSelect option {
+  /* Styles for the options within the select */
+  padding: 5px;
+  background-color: #fff;
+}
+
+.payment-details select#bankSelect option:hover {
+  /* Hover effect for options */
+  background-color: #f0f0f0;
+}
+
+.payment-details select#bankSelect:focus {
+  /* Focus state for the select */
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+  /* Top Navigation */
+  .top-nav {
+    margin: auto;
+    flex-direction: row;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .top-nav nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+
+  .account-links {
+    margin-top: 10px;
+  }
+
+  .pay-with {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .pay-with .left-section,
+  .pay-button .right-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .payment-options {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .payment-options .option {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+  
+  .pay-button {
+    width: 100%;
+  }
+
+  .booking-summary {
+    padding: 15px;
+  }
+}
+
+/* Mobile: 320px */
+@media (max-width: 320px) {
+  /* Top Navigation */
+   .top-nav {
+    padding: 10px;
+  }
+
+ .top-nav .logo {
+  font-size: 1.2em;
+ }
+
+ .top-nav .nav .a {
+  font-size: 0.85em;
+  margin: 2px 0;
+ }
+
+ .pay-with {
+  padding: 10px;
+ }
+
+ .pay-with .left-section .label,
+ .pay-with .left-section .logo,
+ .pay-with .right-section .email,
+ .pay-with .right-section .pay {
+  font-size: 0.85em;
+ } 
+
+ .pay-with .right-section .amount {
+  font-size: 1em;
+ }
+
+ .payment-options {
+  flex-direction: column;
+  width: 100%;
+  padding: 8px;
+ }
+
+ .container {
+  display: block;
+ }
+
+}
+  
