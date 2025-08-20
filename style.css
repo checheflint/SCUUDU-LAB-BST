@@ -1,12 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
 
+:root{
+    --primary-bg-color: #FFFFFF;
+    --primary-color-300: #AAAAAA;
+    --primary-color-400: #808080;
+    --primary-color-500: #D5D5D5;
+    --secondary-color: #D6EAF8;
+    --secondary-color-base: #3498DB;
+    --accent-color: #0F4426;
+    --accent-color-base: #2ECC71;
+    --text-color: #1A1A1A;
+}
 
 body {
     font-family: Plus Jakarta Sans, sans-serif;
     padding: 0;
     margin: 0;
 }
+
 
 header {
     position: fixed;
@@ -83,6 +95,11 @@ nav a {
     color: #1A1A1A; 
     flex-shrink: 0;
 }
+
+.nav-link:hover {
+    background-color: var(--primary-color-500);
+    border: none;
+} 
 
 #loginBtn {
     background-color: #0F4426;
@@ -751,146 +768,98 @@ nav a {
     color: #6D6D6D;
 }
 
-footer {
+.info{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 100px;
-    padding: 0px 100px;
-
-}
-
-.logoAndEmail {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    padding: 0px 100px;
-    margin-bottom: 60px;
-    margin-top: 60px;
-}
-
-
-.quickLinks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.quickLinks > * {
-    width: 180px;
+    margin-bottom: 40px ;
     margin-top: 40px;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
-.About {
+#logo{
+    width: 70px;
+}
+
+.enter-email{
     display: flex;
-    flex-direction: column;
-    color: #000000;
-    gap: 16px;
+    align-items: center;
+    gap: 20px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--text-color);
 }
 
-.About h3 {
-    padding-bottom: 8px;
-    margin: 0;
+.info .enter-email img{
+    width: 25px;
+    /* position: absolute; */
 }
 
-.About a {
-    color: #000000;
+.info .enter-email .left-img{
+    top: 6px;
+    left: 6px;
+}
+
+.info .enter-email .right-img{
+    top: 6px;
+    right: 6px;
+}
+
+.info input[type="email"] {
+    /* padding: 10px 60px; */
+    /* border: 1px solid var(--text-color); */
+    border: none;
+    border-radius: 10px;
+}
+
+/* Footer section */
+
+/* footer{
+    margin-bottom: 40px;
+} */
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.links h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #1E1E1E;
+}
+.links div > a{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #6D6D6D;
+    line-height: 2;
     text-decoration: none;
-    font-size: 16px;
+    cursor: pointer;
 }
 
-.About a:hover {
-    text-decoration: underline;
+.links a > i{
+    color: var(--accent-color-base);
+    font-size: 14px;
+    margin-right: 8px;
 }
 
-.Company {
-    display: flex;
-    flex-direction: column;
-    color: #000000;
-    gap: 16px;
-}
-
-.Company h3 {
-    margin: 0;
-    padding-bottom: 8px;
-}
-
-.Company a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.Company a:hover {
-    text-decoration: underline;
-}
-
-.Support {
-    display: flex;
-    flex-direction: column;
-    color: #000000;
-    gap: 16px;
-}
-
-.Support h3 {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 8px;
-    margin: 0;
-}
-
-.Support a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0px;
-}
-
-.Support a:hover {
-    text-decoration: underline;
+.links div > a:hover{
+    color: var(--secondary-color-base);
 }
 
 
-.socials {
-    display: flex;
-    flex-direction: column;
-    color: #000000;
-    gap: 16px;
+.copyright{
+    display: block;
+    margin-top: 40px;
+    margin: 40px 4rem 20px;
+}
+.copyright p{
+    font-size: 14px;
 }
 
-.socials h3 {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 8px;
-    margin: 0;
-}
 
-.socials a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0px;
-}
-
-.socialIcons {
-    display: flex;
-    gap: 10px;
-} 
-
-
-.copyrightContents {
-    font-size: 16px;
-    border-top: 0.5px solid #0000006c;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.copyrightContents p {
-    text-align: center;
-}
 
 
 
