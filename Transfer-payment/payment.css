@@ -99,6 +99,7 @@ main {
     margin: 4rem 0;
 }
 
+/* general details */
 .pay-with {
     display: flex;
     align-items: start;
@@ -112,8 +113,6 @@ main {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #D4D4D4;
-
-    /* padding: 10px; */
 }
 
 .pay-method h2 {
@@ -121,6 +120,7 @@ main {
     border-right: 1px solid #D4D4D4;
     border-bottom: 1px solid #D4D4D4;
     background-color: #FDFDFD;
+    white-space: nowrap;
 }
 
 .pay-method p {
@@ -135,8 +135,13 @@ main {
     border-right: 1px solid #D4D4D4;
 }
 
-.pay-option:nth-child(4) {
-    background-color: rgba(213, 245, 227, 1);
+.pay-option:hover {
+    cursor: pointer;
+    background-color: #c9d3cd;
+}
+
+.pay-option.active {
+    background-color: #d5f5e3;
 }
 
 #card-image {
@@ -147,6 +152,7 @@ main {
 .pay-method-details {
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 
 .detail-header {
@@ -156,10 +162,8 @@ main {
     gap: 84px;
     padding: 20px 40px;
     height: 90px;
-    /* width: 320px; */
     background-color: #FDFDFD;
     border-bottom: 1px solid #D4D4D4;
-    /* border-left: none; */
 }
 
 .user-price-and-email {
@@ -175,24 +179,76 @@ main {
     display: block;
 }
 
+/* card details payment */
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.card-details h4 {
+    font-size: 20px;
+}
+
+/* crypto payment method */
+.crypto-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+.crypto-details h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.crypto-details p:nth-child(4) {
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.crypto-details p:nth-child(3) {
+    margin-top: 8px;
+    font-size: 28px;
+}
+
+.crypto-details p:nth-child(2) {
+    margin-top: 16px;
+}
+
+.crypto-details button:nth-child(5) {
+    margin-top: 4px;
+}
+
+/* bank transfer details */
 .bank-details {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     gap: 20px;
     padding: 48px 48px;
 }
 
 .bank-details h4 {
-    /* margin: 48px 76px; */
     max-width: 272px;
+    text-align: center;
+    align-self: center;
 }
 
 .account-details {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     margin: 32px 0px;
-
 }
 
 .detail-title {
@@ -209,7 +265,6 @@ main {
 
 .detail-title p {
     font-size: small;
-    /* font-weight: 400; */
 }
 
 .detail-data p {
@@ -219,7 +274,7 @@ main {
 
 .bank-details > p {
     max-width: 325px;
-    /* margin-top: 48px; */
+    text-align: center;
 }
 
 .timer {
@@ -235,6 +290,161 @@ main {
     border: none;
     border-radius: 10px;
 }
+
+/* paypal option */
+.paypal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 0;
+
+}
+
+.paypal-details > p {
+    max-width: 325px;
+    text-align: center;
+}
+
+.paypal-acct-detail-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.paypal-acct-detail-title img {
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.paypal-acct-detail-title p {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 300px;
+    height: 44px;
+    border: 1px solid #AAAAAA;
+    font-size: 16px;
+    text-align: center;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.price img {
+    height: 16px;
+    width: auto;
+}
+
+.price p {
+    font-size: 20px;
+}
+
+
+.email-label {
+    font-size: 16px;
+}
+
+.timer-content {
+    margin-top: 20px;
+}
+
+
+.timer {
+    color: #FF0000;
+}
+
+/* pay with bank details */
+.bank-direct-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px;
+}
+
+.bank-direct-details h4 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.choose-bank {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--primary-color-300);
+}
+
+
+.choose-bank select {
+    width: 250px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23666' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+    border: none;
+    background-color: transparent;
+}
+
+.choose-bank select:focus {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Default option styles */
+.choose-bank option {
+    background-color: rgba(213, 245, 227, 1);
+    color: #333;
+    padding: 10px 20px;
+    border: transparent;
+}
+
+
+.choose-bank option:checked {
+    background-color: #3498DB;
+    color: white;
+}
+
+
+.make-payment-btn {
+    background-color: #176639;
+    padding: 12px 0px;
+    width: 236px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 
 .booking-summary {
     display: flex;
