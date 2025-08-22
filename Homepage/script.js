@@ -1,3 +1,5 @@
+
+//responsive hamburger menu
 const hamburger = document.querySelector(".hamburger")
 const navMenu = document.querySelector(".nav-menu")
 
@@ -12,8 +14,9 @@ addEventListener("click", () => {
     navMenu.classList.remove("active");
 }))
 
+//start booking button
 const bookButton = document.getElementById("bookButton");
 
 bookButton.addEventListener("click" , () =>{
-    window.location.href = "booking.html"
+    window.location.href = "booking/booking.html"
 });
