@@ -24,38 +24,29 @@
         </h1>
 
         <p class="msg">
-          We sent a verification code to Johndoe@gmail.com <br>
+          We sent a verification code to <span id="users-email"></span><br>
           Enter the code to continue.
         </p>
 
-        <div id="rectangles" class="rectangles">
-            <div class="rec">
-                <img src="./images/Rectangle 1.png" alt="rec">
-            </div>
-            <div class="rec">
-                <img src="./images/Rectangle 2.png" alt="rec">
-            </div>
-            <div class="rec">
-                <img src="./images/Rectangle 3.png" alt="rec">
-            </div>
-            <div class="rec">
-                <img src="./images/Rectangle 4.png" alt="rec">
-            </div>
-            <div class="rec">
-                <img src="./images/Rectangle 5.png" alt="rec">
-            </div>
-            <div class="rec">
-                <img src="./images/Rectangle 6.png" alt="rec">
-            </div>
-        </div>
+        <form id="otp-form" autocomplete="one-time-code">
+          <div class="otp" role="group" aria-label="Verification code">
+               <!-- Adjust data-length to change number of boxes -->
+            <input class="otp-input" inputmode="text" pattern="[A-Za-z0-9]" maxlength="1" aria-label="Digit 1" />
+            <input class="otp-input" inputmode="text" pattern="[A-Za-z0-9]" maxlength="1" aria-label="Digit 2" />
+            <input class="otp-input" inputmode="text" pattern="[A-Za-z0-9]" maxlength="1" aria-label="Digit 3" />
+            <input class="otp-input" inputmode="text" pattern="[A-Za-z0-9]" maxlength="1" aria-label="Digit 4" />
+            <input class="otp-input" inputmode="text" pattern="[A-Za-z0-9]" maxlength="1" aria-label="Digit 5" />
+            <input class="otp-input" inputmode="text" pattern="[A-Za-z0-9]" maxlength="1" aria-label="Digit 6" />
+          </div>
+        </form>
 
-        <button class="btn" id="btn">Verify email </button>
+        <button class="btn" id="btn2">Verify email </button>
 
-        <p class="request">
+        <p class="request" id="request">
           Request new code
         </p>
 
-        <p class="back">
+        <p class="back" id="back">
           Back to sign-in
         </p>
 

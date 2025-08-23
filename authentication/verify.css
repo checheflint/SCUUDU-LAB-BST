@@ -14,70 +14,58 @@ main {
     justify-self: center;
 }
 main h1 {
-  width: 531px;
-height: 52px;
-top: 124px;
-left: 408px;
-
-font-family: Montserrat;
-font-weight: 700;
-font-style: Bold;
-font-size: 40px;
-line-height: 52px;
-letter-spacing: 0%;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
 }
 .msg {
-  width: 624px;
-height: 56px;
-top: 209px;
-left: 408px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+}
 
-font-family: Montserrat;
-font-weight: 400;
-font-style: Regular;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: 0%;
+.otp { 
+display: grid; 
+grid-auto-flow: column; 
+grid-auto-columns: var(--size); 
+gap: 10px; 
 }
-.rectangles {
-  display: flex;
-  gap: 20px;
-}
-.rectangles:hover {
-  cursor: pointer;
-}
-.rec {
-  width: 77px;
-height: 82px;
-top: 324px;
-left: 408px;
-border-width: 1px;
-border: 1px solid #AAAAAA
-}
-.rec {
-  margin-top: 5%;
-  margin-bottom: 10%;
-}
-.btn {
-  width: 624px;
+.otp-input {
+gap: 20px;
+width: 56px;
 height: 56px;
-top: 465px;
-left: 408px;
-border-width: 1px;
-border-radius: 12px;
-padding-top: 14px;
-padding-right: 19px;
-padding-bottom: 14px;
-padding-left: 19px;
-gap: 10px;
-border: 1px solid #D4D4D4;
-background: #AAAAAA;
-font-family: Montserrat;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0%;
+text-align: center;
+font-size: 22px;
+letter-spacing: 2px;
+border: 2px solid #c9cdd4;
+outline: none;
+background: #fff;
+transition: border-color .15s ease, box-shadow .15s ease;
+margin-bottom: 20px;
+}
+.otp-input:focus {
+border-color: var(--border-focus);
+box-shadow: 0 0 0 4px rgba(59,130,246,.15);
+}
+
+
+
+
+
+.btn {
+  width: 100%;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 14px 19px;
+  gap: 10px;
+  border: 1px solid #D4D4D4;
+  background: #AAAAAA;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
 }
 .btn {
   margin-bottom: 5%;
@@ -89,34 +77,24 @@ letter-spacing: 0%;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(105, 2, 2, 0.2);
 }
-.question {
-  width: 634px;
-height: 45px;
-top: 573px;
-left: 408px;
 
-font-family: Montserrat;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0%;
+#users-email {
+  color: blue;
+}
+.question {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
 }
 .question {
   margin-bottom: 5%;
 }
 .request {
-  width: 634px;
-height: 45px;
-top: 573px;
-left: 408px;
-
-font-family: Montserrat;
-font-weight: 400;
-font-style: Regular;
-font-size: 22px;
-line-height: 24px;
-letter-spacing: 0%;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
 }
 .request {
   margin-bottom: 3%;
@@ -128,17 +106,11 @@ letter-spacing: 0%;
   color: rgb(2, 119, 2);
 }
 .back {
-  width: 204px;
-height: 28px;
-top: 651px;
-left: 618px;
-font-family: Montserrat;
-font-weight: 400;
-font-style: Regular;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: 0%;
-color: #2ECC71;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  color: #2ECC71;
 }
 .back {
   padding-left: 35%;
@@ -148,32 +120,27 @@ color: #2ECC71;
   color: rgb(2, 119, 2);
 }
 .note {
-    width: 527px;
-    height: 47px;
-    top: 880px;
-    left: 456px;
-    font-family: Montserrat;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0%;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
 }
 .note {
   margin-bottom: 5%;
 }
+.ca {
+  color: red;
+}
 .terms, .privacy {
   font-family: Montserrat;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0%;
-text-decoration: underline;
-text-decoration-style: solid;
-text-decoration-thickness: 0%;
-text-decoration-skip-ink: auto;
-color: #1A1A1A;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-decoration-skip-ink: auto;
+  color: #1A1A1A;
 }
 .terms, .privacy {
   cursor: pointer;
@@ -184,33 +151,51 @@ color: #1A1A1A;
 
 
 .copywrite {
-    width: 389px;
-    height: 20px;
-    gap: 10px;
-    width: 354px;
-    height: 17px;
-    top: 979px;
-    left: 456px;
-    gap: 11px;
-     font-family: Plus Jakarta Sans;
+    font-family: Plus Jakarta Sans;
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
-    line-height:100%;
-    letter-spacing: 0%;
 }
 
 
 
  
 
-
-
-
-
-@media (max-width: 500px) {
-    .auth-container {
-        margin: 1rem;
-        padding: 1.5rem;
+    @media (max-width: 700px) {
+    * {
+    max-width: 100%;
+   }
+    header {
+       padding-left: 5%;
+    }
+    .logo-container, .logo img {
+        height: 40px;
+        width: auto;
+    }
+    main {
+        width: 90%;
+    }
+    main {
+        width: 90%;
+    }
+    main h1 {
+        font-size: 33px;
+    }
+    #users-email {
+      font-size: 18.5px;
+      width: 10px;
+    }
+    .msg {
+        font-size: 19px;
+    }
+    .btn {
+        width: 100%;
+        font-size: medium;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .copywrite {
+        font-size: 5px;
+        font-style: italic;
     }
 }
