@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/booking-summary.css">
+    <link rel="shortcut icon" href="ICONS/Japalogo.svg" type="image/x-icon">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Booking Summary</title>
+</head>
+<body>
+    <header id="search-contents">
+        <nav id="nav-section">   
+            <div id="nav-links">
+                <!-- logo -->
+                <a href="#home"><img id="logo" src="ICONS/Japalogo.svg" alt="Japalogo"></a>
+                <ul>
+                    <li><a href="#bookflights">Book Flights</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#destination">Destination</a></li>
+                    <li><a href="#plans">Plans<i class="fa-solid fa-angle-down"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="right-links">
+                <ul>
+                    <li><a href="#help">Help ?</a></li>
+                    <li><a href="#account"><img src="ICONS/Users.svg" alt="User-Icon">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="upper-btn">
+                <div class="return">
+                    <h5>Return</h5>
+                    <h5 id="one-way"><span>One-way</span></h5>
+                </div>
+                <div class="economy">
+                    <!-- Economy dropdown -->
+                    <div class="economy-dropdown">
+                        <h5 class="dropdown-toggle">Economy<i class="fa-solid fa-angle-down"></i></h5>
+                      
+                            <div class="dropdown-menu">
+                                <div class="option">Business</div>
+                                <div class="option">First Class</div>
+                            </div>
+                    </div>
+                      
+                
+                    
+                    <!-- Traveler dropdown -->
+                    <div class="traveler-dropdown">
+                      <h5 class="dropdown-toggle">Traveler(s)<i class="fa-solid fa-angle-down"></i></h5>
+                  
+                      <div class="dropdown-menu">
+                        <div class="traveler-row">
+                          <p>Adult (16+ years)</p>
+                          <div class="counter">
+                            <span>1</span><span>2</span><span>3</span><span>4</span>
+                            <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+                          </div>
+                        </div>
+                        <div class="traveler-row">
+                          <p>Young Adult (12–15 years)</p>
+                          <div class="counter">
+                            <span>0</span><span>1</span><span>2</span><span>3</span>
+                            <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                          </div>
+                        </div>
+                        <div class="traveler-row">
+                          <p>Children (2–11 years)</p>
+                          <div class="counter">
+                            <span>0</span><span>1</span><span>2</span><span>3</span>
+                            <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                          </div>
+                        </div>
+                        <div class="traveler-row">
+                          <p>Infants (under 2 years)</p>
+                          <div class="counter">
+                            <span>0</span><span>1</span><span>2</span><span>3</span>
+                            <span>4</span><span>5</span><span>6</span>
+                          </div>
+                        </div>
+                  
+                        <!-- Buttons -->
+                        <div class="dropdown-actions">
+                          <button class="close-btn">Close</button>
+                          <button class="apply-btn">Apply</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- <div class="accomodation">
+                    <h5><img src="ICONS/bed.png" alt="Accomodation-icon">Accomodation</h5>
+                    <h5><img src="ICONS/taxi.png" alt="Taxi-icon">Taxi</h5>
+                </div> -->
+            </div>
+        </div>  
+
+        <h2 class="review">Review Your Flight</h2>
+    </header>
+
+    <main>
+       <div class="air-cards">
+            <div class="card-info-details">
+
+                <div class="air-peace">
+                    <p>Air Peace</p>
+                    <img src="ICONS/check mark.svg">
+                </div>
+
+                <div class="code">(P47120)</div>
+
+                <div class="time">
+                    <h4>06:30</h4>
+                    <h4>07:50</h4>
+                </div>
+
+                <div class="takeoff">
+                    <p>Lagos Murtala Muhammed international Airport</p>
+                    <div>
+                        <p>1hrs 20mins</p>
+                        <img src="ICONS/Line.svg">
+                        <p>Non Stop</p>
+                    </div>
+                    <p>Abuja, Nnamdi Azikiwe International Airport</p>
+                </div>
+                <h4 class="takeoff-price">$200</h4>
+            </div>
+            <div class="card-info-details">
+
+                <div class="air-peace">
+                    <p>Arik Air</p>
+                    <img src="ICONS/check mark.svg">
+                </div>
+
+                <div class="code">(P47120)</div>
+
+                <div class="time">
+                    <h4>06:30</h4>
+                    <h4>07:50</h4>
+                </div>
+
+                <div class="takeoff">
+                    <p>Lagos Murtala Muhammed international Airport</p>
+                    <div>
+                        <p>1hrs 20mins</p>
+                        <img src="ICONS/Line.svg">
+                        <p>Non Stop</p>
+                    </div>
+                    <p>Abuja, Nnamdi Azikiwe International Airport</p>
+                </div>
+                <h4 class="takeoff-price">$240</h4>
+            </div>
+        </div>
+
+        <!-- Booking Summary -->
+        <!-- Left side -->
+        <div class="booking-container">
+            <div class="payment-options">
+              <h3>PAY USING ANY OF THIS</h3>
+              <ul>
+                <li><span>New</span><i class="fa-solid fa-credit-card"></i> <span>Card</span></li>
+                <li><img src="ICONS/crypto.svg"><span>Crypto</span></li>
+                <li><img src="ICONS/transfer.svg"> <span>Transfer</span></li>
+                <li><i class="fa-brands fa-paypal"></i> <span>PayPal</span></li>
+                <li><span>New</span><i class="fa-solid fa-building-columns"></i> <span>Bank</span></li>
+              </ul>
+            </div>
+            
+            <!-- Right side -->
+            <div class="booking-details">
+              <h3>Booking Details And Prices</h3>
+              <p class="sub">Details and breakdown</p>
+        
+              <div class="details">
+                <p><strong>Traveler :</strong> Mr John Doe</p>
+                
+                <p class="section-title">Price details</p>
+                <div class="line"><span>Adult</span> <span>$230</span></div>
+                <div class="line"><span>Fees and taxes</span> <span>$50</span></div>
+                <div class="line"><span>Booking Fee</span> <span>$5</span></div>
+        
+                <p class="section-title">Add Ons</p>
+                <div class="line"><span>Booking details via social media</span> <span>$15</span></div>
+                <div class="line"><span>Flexible travel Dates and postponement</span> <span>$35</span></div>
+                <div class="line"><span>Airport protocol</span> <span>$25</span></div>
+        
+                <p class="section-title total">Total Price</p>
+                <div class="line total"><span></span> <span>$360</span></div>
+              </div>
+            </div>
+            <!-- End of Booking Summary -->
+        </div>
+       
+        <div class="go-back">
+            <a href="contact-details-one.html">Back</a></div>
+        </div>
+    </main>
+
+    <footer>
+         <div class="copyright">
+            <p>&copy; 2025 Scuduu Lab. Copyright and all rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="booking.js"></script>
+
+
+</body>
+</html>

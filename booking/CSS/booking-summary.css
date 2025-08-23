@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-bg-color: #ffffff;
+  --primary-color-300: #aaaaaa;
+  --primary-color-400: #808080;
+  --primary-color-500: #d5d5d5;
+  --secondary-color: #d6eaf8;
+  --secondary-color-base: #3498db;
+  --secondary-color-base-cards: #f0f7fb;
+  --accent-color: #0f4426;
+  --accent-color80: #176639;
+  --accent-color100: #092917;
+  --accent-color-base: #2ecc71;
+  --text-color: #1a1a1a;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+#nav-section {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 4rem;
+  margin-bottom: 40px;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#nav-links img {
+  width: 70px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+#nav-section #nav-links {
+  display: flex;
+  padding-left: 10px;
+}
+#nav-section #nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+#nav-section #nav-links i {
+  vertical-align: middle;
+  padding-left: 8px;
+}
+#nav-section #nav-links ul a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+#nav-section #nav-links ul a:hover {
+  background-color: var(--primary-color-500);
+  border-radius: 5px;
+}
+
+#nav-section .right-links ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  list-style-type: none;
+}
+#nav-section .right-links ul a {
+  text-decoration: none;
+  color: var(--secondary-color-base);
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+#nav-section .right-links ul img {
+  vertical-align: middle;
+  width: 24px;
+  padding-right: 5px;
+}
+
+#nav-section .right-links ul a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown top Sections*/
+.upper-btn {
+  display: flex;
+  gap: 40px;
+  margin: 40px 4rem;
+}
+
+.return {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color-300);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  width: 250px;
+  padding: 10px 25px;
+  border-bottom: 1px solid var(--text-color);
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.return h5 {
+  background-color: var(--primary-bg-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.upper-btn .return #one-way {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 10px;
+}
+
+.upper-btn #return, #one-way:hover{
+  cursor: pointer;
+}
+
+
+.upper-btn .economy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.economy i {
+  vertical-align: middle;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.upper-btn .economy h5 {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  width: 150px;
+  padding: 20px 25px;
+  border-bottom: 2px solid var(--primary-color-300);
+  border-top: 2px solid var(--primary-color-300);
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+/* Economy dropdown */
+.economy-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.economy-dropdown .dropdown-toggle {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+  width: 150px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.economy-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  width: 200px;
+  display: none;
+  z-index: 100;
+}
+
+.economy-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.economy-dropdown .option {
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.economy-dropdown .option:hover {
+  background: var(--secondary-color-base);
+  color: #fff;
+  border-radius: 6px;
+}
+/* End of economy dropdown */
+
+
+/* Traveler dropdown */
+.traveler-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.traveler-dropdown .dropdown-toggle {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+  width: 150px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.traveler-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 20px;
+  width: 300px;
+  display: none;
+  z-index: 100;
+}
+
+.traveler-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Inside dropdown */
+.traveler-row {
+  margin-bottom: 15px;
+}
+
+.traveler-row p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.counter span {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.counter span:hover,
+.counter span.active {
+  background-color: var(--secondary-color-base);
+  color: var(--primary-bg-color);
+}
+
+/* Dropdown buttons */
+.dropdown-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.close-btn, .apply-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: #f1f1f1;
+}
+
+.apply-btn {
+  background: var(--secondary-color-base);
+  color: #fff;
+}
+
+/* Review your flight styling */
+.review {
+  font-size: 38px;
+  margin-left: 4rem;
+}
+
+/* Booking takeoff infomation */
+.air-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2.5rem 4rem;
+  justify-content: center;
+}
+
+.card-info-details {
+  flex: 0 0 calc(50% - 1.2rem);
+  background: var(--secondary-color-base-cards);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.white-bg {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--primary-color-300);
+  transition: 0.3s ease-in;
+}
+.white-bg:hover {
+  background: var(--secondary-color-base-cards);
+  border: none;
+}
+
+.air-peace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.air-peace p {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.air-peace img {
+  width: 18px;
+  height: 18px;
+}
+
+.code {
+  color: var(--primary-color-300);
+  font-size: 0.75rem;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.takeoff {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--primary-color-400);
+}
+
+.takeoff div {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--primary-color-400);
+}
+
+.takeoff img {
+  width: 80px;
+  margin: 0.5rem 0;
+}
+
+.takeoff-price {
+  text-align: right;
+  color: var(--secondary-color-base);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Booking summary */
+.booking-container {
+  background: var(--primary-bg-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 5rem;
+  margin: 2.5rem; 
+}
+
+/* Left side */
+
+.payment-options h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.payment-options ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payment-options li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid var(--primary-color-300);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.payment-options li:hover {
+  border-color: #000;
+}
+
+
+.payment-options ul li:first-child span:first-child {
+  color: red;         
+  font-size: 10px;    
+}
+
+.payment-options ul li:last-child span:first-child {
+  color: red;
+  font-size: 10px;
+}
+
+.payment-options i {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.payment-options ul li:nth-child(4) i{
+    color: var(--secondary-color-base);
+}
+
+/* Right side */
+.booking-details {
+    max-width: 700px;   
+    flex-shrink: 0;     
+}
+  
+  .booking-details {
+    flex: 1;            
+}
+
+.booking-details h3 {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.booking-details .sub {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.details p {
+  margin: 0.5rem 0;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0.4rem 0;
+  padding: 0.6rem 0;
+}
+
+.line.total {
+  font-weight: bold;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.go-back{
+    text-align: center;
+}
+
+.go-back a{
+    color: var(--text-color);
+    font-size: 14px;
+  }
+  .go-back a:hover{
+    font-weight: 600;
+  }
+
+/* Footer section */
+footer {
+  margin: 5.5rem 4rem 0 4rem;
+}
+.copyright {
+  display: block;
+}
+.copyright p {
+  font-size: 14px;
+}
