@@ -205,6 +205,7 @@ nav a {
     border-radius: 10px;
     color: #FFFFFF;
     font-size: 16px;
+    cursor: pointer;
 }
 
 #learnMoreButton {
@@ -227,6 +228,7 @@ nav a {
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .noHassle {

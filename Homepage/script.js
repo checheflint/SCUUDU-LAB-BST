@@ -20,3 +20,4 @@ const bookButton = document.getElementById("bookButton");
 bookButton.addEventListener("click" , () =>{
     window.location.href = "booking/booking.html"
 });
+ 
