@@ -149,8 +149,9 @@ verifyBtn.addEventListener('click', (e) => {
   }
 
   alert(`✅ Congratulations!`);
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });
+
 
 // Clear all inputs
 clearBtn.addEventListener('click', () => {
