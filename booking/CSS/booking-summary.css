@@ -129,6 +129,11 @@ body {
   border-radius: 10px;
 }
 
+.upper-btn #return, #one-way:hover{
+  cursor: pointer;
+}
+
+
 .upper-btn .economy {
   display: flex;
   justify-content: center;
@@ -152,6 +157,141 @@ body {
   border-radius: 10px;
   text-align: center;
   margin-right: 30px;
+}
+
+/* Economy dropdown */
+.economy-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.economy-dropdown .dropdown-toggle {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+  width: 150px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.economy-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  width: 200px;
+  display: none;
+  z-index: 100;
+}
+
+.economy-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.economy-dropdown .option {
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.economy-dropdown .option:hover {
+  background: var(--secondary-color-base);
+  color: #fff;
+  border-radius: 6px;
+}
+/* End of economy dropdown */
+
+
+/* Traveler dropdown */
+.traveler-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.traveler-dropdown .dropdown-toggle {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+  width: 150px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.traveler-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 20px;
+  width: 300px;
+  display: none;
+  z-index: 100;
+}
+
+.traveler-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Inside dropdown */
+.traveler-row {
+  margin-bottom: 15px;
+}
+
+.traveler-row p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.counter span {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.counter span:hover,
+.counter span.active {
+  background-color: var(--secondary-color-base);
+  color: var(--primary-bg-color);
+}
+
+/* Dropdown buttons */
+.dropdown-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.close-btn, .apply-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: #f1f1f1;
+}
+
+.apply-btn {
+  background: var(--secondary-color-base);
+  color: #fff;
 }
 
 /* Review your flight styling */
@@ -344,7 +484,7 @@ body {
 
 .line {
   display: flex;
-  justify-content: space-between; /* pushes left & right apart */
+  justify-content: space-between; 
   align-items: center;
   margin: 0.4rem 0;
   padding: 0.6rem 0;
