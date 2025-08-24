@@ -361,6 +361,7 @@ main .submit{
 }
 .submit > button:hover{
   background-color: var(--accent-color100);
+  cursor: pointer;
 }
 
 .submit a{
