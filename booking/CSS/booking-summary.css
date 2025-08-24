@@ -496,17 +496,41 @@ body {
   margin-top: 0.5rem;
 }
 
+.continue-to-pay-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#continue-to-pay {
+  width: 440px;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: .1s ease-in-out;
+}
+
+#continue-to-pay:hover {
+  background-color: var(--accent-color100);
+  cursor: pointer;
+}
+
 .go-back{
     text-align: center;
+    align-items: center;
 }
 
 .go-back a{
-    color: var(--text-color);
-    font-size: 14px;
-  }
-  .go-back a:hover{
-    font-weight: 600;
-  }
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.go-back a:hover{
+  font-weight: 600;
+}
 
 /* Footer section */
 footer {

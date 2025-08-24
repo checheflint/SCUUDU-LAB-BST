@@ -101,6 +101,10 @@ nav a {
     border: none;
 } 
 
+.right-links {
+    display: flex;
+}
+
 #loginBtn {
     background-color: #0F4426;
     text-decoration: none;

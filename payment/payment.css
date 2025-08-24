@@ -291,6 +291,11 @@ main {
     border-radius: 10px;
 }
 
+.make-payment-btn:hover {
+    background-color: #0f4426d3;
+    cursor: pointer;
+}
+
 /* paypal option */
 .paypal-details {
     display: flex;

@@ -147,6 +147,11 @@ document.querySelectorAll(".pay-option").forEach(option => {
   });
 });
 
+detailsContainer.addEventListener("click", e => {
+  if (e.target.classList.contains("make-payment-btn")) {
+    window.location.href = "../payment-confirmation page/payment-confirmation.html";
+  }
+});
 
 
 

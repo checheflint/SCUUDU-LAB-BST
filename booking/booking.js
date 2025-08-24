@@ -18,9 +18,9 @@ if (proceedBtn) {
     });
 }
 
-const transferPay = document.getElementById("transferPay");
-if (transferPay) {
-    transferPay.addEventListener("click", () => {
+const continueToPay = document.getElementById("continue-to-pay");
+if (continueToPay) {
+    continueToPay.addEventListener("click", () => {
         window.location.href = "../payment/payment.html";
     });
 }
